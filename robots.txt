@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hades875e.github.io/xvi-store/sitemap.xml
+Sitemap: https://xvi-store.com/sitemap.xml
