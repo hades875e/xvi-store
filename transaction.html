@@ -8,10 +8,10 @@
         content="Complete your secure purchase at XVI Store. Instant account delivery with verified payments and 24/7 support.">
     <meta name="keywords" content="purchase, transaction, secure payment, XVI Store accounts">
     <meta name="robots" content="noindex, nofollow">
-    <link rel="canonical" href="https://yourstore.com/transaction.html">
+    <link rel="canonical" href="https://xvi-store.com/transaction.html">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourstore.com/transaction.html">
+    <meta property="og:url" content="https://xvi-store.com/transaction.html">
     <meta property="og:title" content="Transaction - XVI Store">
     <meta property="og:description"
         content="Complete your secure purchase at XVI Store. Instant account delivery with verified payments and 24/7 support.">
@@ -19,52 +19,31 @@
         content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourstore.com/transaction.html">
+    <meta property="twitter:url" content="https://xvi-store.com/transaction.html">
     <meta property="twitter:title" content="Transaction - XVI Store">
     <meta property="twitter:description"
         content="Complete your secure purchase at XVI Store. Instant account delivery with verified payments and 24/7 support.">
     <meta property="twitter:image"
         content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --dark: #0f172a;
-            --darker: #020617;
-            --gold: #fbbf24;
-            --goldHover: #f59e0b;
-        }
-
-        body {
-            background: var(--darker);
-            color: white;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .glass {
-            background: rgba(30, 41, 59, 0.8);
-            backdrop-filter: blur(10px);
-        }
-
-        .shadow-glow {
-            box-shadow: 0 0 20px rgba(251, 191, 36, 0.1);
-        }
-    </style>
 </head>
 
-<body class="min-h-screen">
+<body class="bg-slate-950 text-white antialiased min-h-screen">
     <div class="max-w-4xl mx-auto px-4 py-16">
         <div class="text-center mb-8">
-            <h1 class="text-4xl font-extrabold text-gold mb-4">Complete Your Purchase</h1>
+            <h1 class="text-4xl font-extrabold text-yellow-400 mb-4">Complete Your Purchase</h1>
             <p class="text-gray-300">Secure transaction for your XVI Store account</p>
         </div>
 
-        <div class="glass rounded-3xl border border-gray-800 p-8 shadow-glow">
+        <div class="bg-slate-900 rounded-3xl border border-gray-800 p-8 shadow-lg max-w-2xl mx-auto">
             <form class="space-y-6">
                 <div class="grid gap-6 md:grid-cols-2">
                     <div>
                         <label class="block text-sm font-medium text-gray-300 mb-2">Account Type</label>
-                        <select
-                            class="w-full rounded-lg bg-slate-900 border border-gray-700 px-4 py-3 text-white focus:border-gold focus:outline-none">
+                        <select class="w-full rounded-lg bg-slate-800 border border-gray-700 px-4 py-3 text-white focus:border-yellow-400 focus:outline-none">
                             <option>Tier 1 Smurf - $14.99</option>
                             <option>Premium Sub - $39.99</option>
                             <option>Elite Bundle - $89.99</option>
@@ -74,7 +53,7 @@
                     <div>
                         <label class="block text-sm font-medium text-gray-300 mb-2">Quantity</label>
                         <input type="number" min="1" value="1"
-                            class="w-full rounded-lg bg-slate-900 border border-gray-700 px-4 py-3 text-white focus:border-gold focus:outline-none">
+                            class="w-full rounded-lg bg-slate-800 border border-gray-700 px-4 py-3 text-white focus:border-yellow-400 focus:outline-none">
                     </div>
                 </div>
 
@@ -82,12 +61,12 @@
                     <div>
                         <label class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
                         <input type="email" placeholder="your@email.com"
-                            class="w-full rounded-lg bg-slate-900 border border-gray-700 px-4 py-3 text-white focus:border-gold focus:outline-none">
+                            class="w-full rounded-lg bg-slate-800 border border-gray-700 px-4 py-3 text-white focus:border-yellow-400 focus:outline-none">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-300 mb-2">Payment Method</label>
                         <select
-                            class="w-full rounded-lg bg-slate-900 border border-gray-700 px-4 py-3 text-white focus:border-gold focus:outline-none">
+                            class="w-full rounded-lg bg-slate-800 border border-gray-700 px-4 py-3 text-white focus:border-yellow-400 focus:outline-none">
                             <option>Credit Card</option>
                             <option>PayPal</option>
                             <option>Crypto</option>
@@ -98,10 +77,10 @@
                 <div class="border-t border-gray-700 pt-6">
                     <div class="flex justify-between items-center mb-4">
                         <span class="text-lg font-semibold">Total:</span>
-                        <span class="text-2xl font-bold text-gold">$14.99</span>
+                        <span class="text-2xl font-bold text-yellow-400">$14.99</span>
                     </div>
                     <button type="submit"
-                        class="w-full rounded-full bg-gold px-8 py-4 text-lg font-bold text-darker hover:bg-goldHover transition">
+                        class="w-full rounded-full bg-yellow-400 px-8 py-4 text-lg font-bold text-slate-900 hover:bg-yellow-500 transition">
                         Complete Purchase <i class="fas fa-lock ml-2"></i>
                     </button>
                 </div>
@@ -109,14 +88,14 @@
 
             <div class="mt-8 text-center">
                 <p class="text-sm text-gray-400">
-                    <i class="fas fa-shield-alt text-gold mr-2"></i>
+                    <i class="fas fa-shield-alt text-yellow-400 mr-2"></i>
                     Secure SSL encryption • 30-day money-back guarantee • Instant delivery
                 </p>
             </div>
         </div>
 
         <div class="text-center mt-8">
-            <a href="index.html" class="text-gold hover:text-goldHover transition">
+            <a href="index.html" class="text-yellow-400 hover:text-yellow-500 transition">
                 <i class="fas fa-arrow-left mr-2"></i> Back to Store
             </a>
         </div>
