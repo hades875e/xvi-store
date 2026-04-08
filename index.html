@@ -24,27 +24,6 @@
     <meta property="twitter:description" content="XVI Store delivers secure, instantly delivered accounts with premium support and a money-back guarantee.">
     <meta property="twitter:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        dark: '#0f172a',
-                        darker: '#020617',
-                        gold: '#FFD700',
-                        goldHover: '#FACC15'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Merriweather', 'serif'],
-                    },
-                    boxShadow: {
-                        glow: '0 20px 60px rgba(255, 215, 0, 0.15)',
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:wght@300;400&display=swap');
 
@@ -103,13 +82,13 @@
     </script>
 </head>
 
-<body class="bg-darker text-white antialiased">
+<body class="bg-slate-950 text-white antialiased">
     <div id="exitIntentModal"
         class="fixed inset-0 hidden items-center justify-center backdrop-blur-modal px-4 py-6 z-60">
-        <div class="bg-dark border border-gray-800 rounded-3xl max-w-lg w-full p-8 text-center shadow-glow">
+        <div class="bg-slate-900 border border-gray-800 rounded-3xl max-w-lg w-full p-8 text-center shadow-glow">
             <div class="mb-6">
                 <span
-                    class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold text-darker text-2xl">??</span>
+                    class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-yellow-400 text-slate-900 text-2xl">??</span>
             </div>
             <h2 class="text-3xl font-extrabold mb-4">Wait! Get 15% off your first account.</h2>
             <p class="text-gray-300 body-text mb-6">Leave this page and you could miss the fastest account access,
@@ -119,26 +98,26 @@
                 <p class="text-2xl font-bold text-white mt-2">XVI15</p>
             </div>
             <button onclick="closeExitModal()"
-                class="w-full inline-flex items-center justify-center rounded-full bg-gold text-darker font-bold px-6 py-3 hover:bg-goldHover transition">Use
+                class="w-full inline-flex items-center justify-center rounded-full bg-yellow-400 text-slate-900 font-bold px-6 py-3 hover:bg-yellow-500 transition">Use
                 Code Now</button>
             <button onclick="dismissExitModal()" class="mt-4 text-sm text-gray-400 hover:text-white">No thanks, continue
                 anyway</button>
         </div>
     </div>
 
-    <header class="sticky top-0 z-40 bg-dark border-b border-gray-800">
+    <header class="sticky top-0 z-40 bg-slate-900 border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <a href="#top" class="text-gold font-extrabold text-2xl tracking-wider">XVI <span
+                <a href="#top" class="text-yellow-400 font-extrabold text-2xl tracking-wider">XVI <span
                         class="text-white">STORE</span></a>
                 <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
-                    <a href="#products" class="hover:text-gold transition">Products</a>
-                    <a href="#trust" class="hover:text-gold transition">Trust</a>
-                    <a href="#about" class="hover:text-gold transition">About</a>
-                    <a href="#faq" class="hover:text-gold transition">FAQ</a>
+                    <a href="#products" class="hover:text-yellow-400 transition">Products</a>
+                    <a href="#trust" class="hover:text-yellow-400 transition">Trust</a>
+                    <a href="#about" class="hover:text-yellow-400 transition">About</a>
+                    <a href="#faq" class="hover:text-yellow-400 transition">FAQ</a>
                 </nav>
                 <a href="#products"
-                    class="hidden md:inline-flex items-center gap-2 bg-gold text-darker font-bold rounded-full px-5 py-3 hover:bg-goldHover transition">Shop
+                    class="hidden md:inline-flex items-center gap-2 bg-yellow-400 text-slate-900 font-bold rounded-full px-5 py-3 hover:bg-yellow-500 transition">Shop
                     Now <i class="fas fa-arrow-right"></i></a>
                 <button id="mobileMenuButton" class="md:hidden text-gray-300 focus:outline-none"><i
                         class="fas fa-bars text-xl"></i></button>
@@ -147,7 +126,7 @@
     </header>
 
     <main id="top">
-        <section class="relative overflow-hidden bg-darker">
+        <section class="relative overflow-hidden bg-slate-950">
             <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-transparent to-[#111827] opacity-80">
             </div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
@@ -160,7 +139,7 @@
                         </div>
                         <div class="space-y-6">
                             <h1 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
-                                Secure, Fast, Reliable Accounts � <span class="text-gold">Welcome to XVI Store</span>
+                                Secure, Fast, Reliable Accounts � <span class="text-yellow-400">Welcome to XVI Store</span>
                             </h1>
                             <p class="text-lg md:text-xl text-gray-300 max-w-2xl body-text">Experience verified account
                                 delivery with 24/7 support, instant checkout, and a money-back guarantee. Perfect for
@@ -168,10 +147,10 @@
                         </div>
                         <div class="flex flex-col sm:flex-row gap-4 sm:items-center">
                             <a href="#products"
-                                class="inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-sm font-bold text-darker transition hover:bg-goldHover">Shop
+                                class="inline-flex items-center justify-center rounded-full bg-yellow-400 px-8 py-4 text-sm font-bold text-slate-900 transition hover:bg-yellow-500">Shop
                                 Now</a>
                             <a href="#trust"
-                                class="inline-flex items-center justify-center rounded-full border border-gray-700 px-8 py-4 text-sm font-semibold text-white hover:border-gold transition">Why
+                                class="inline-flex items-center justify-center rounded-full border border-gray-700 px-8 py-4 text-sm font-semibold text-white hover:border-yellow-400 transition">Why
                                 XVI</a>
                         </div>
                         <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -194,7 +173,7 @@
                         </div>
                     </div>
                     <div class="relative">
-                        <div class="absolute -right-12 top-12 w-56 h-56 rounded-full bg-gold/15 blur-3xl"></div>
+                        <div class="absolute -right-12 top-12 w-56 h-56 rounded-full bg-yellow-400/15 blur-3xl"></div>
                         <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
                             alt="Cyber abstract" class="w-full rounded-[2rem] border border-gray-800 shadow-glow">
                         <div
@@ -217,17 +196,17 @@
             </div>
         </section>
 
-        <section id="trust" class="py-16 bg-dark border-t border-gray-800">
+        <section id="trust" class="py-16 bg-slate-900 border-t border-gray-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid gap-6 md:grid-cols-3">
                     <div class="glass rounded-3xl border border-gray-800 p-8 text-center shadow-glow">
-                        <i class="fas fa-shield-alt text-gold text-4xl mb-4"></i>
+                        <i class="fas fa-shield-alt text-yellow-400 text-4xl mb-4"></i>
                         <h3 class="text-xl font-bold mb-2">SSL Secure</h3>
                         <p class="text-gray-300 body-text">All purchases are protected by bank-level encryption and
                             verified payment gateways.</p>
                     </div>
                     <div class="glass rounded-3xl border border-gray-800 p-8 text-center shadow-glow">
-                        <i class="fas fa-bolt text-gold text-4xl mb-4"></i>
+                        <i class="fas fa-bolt text-yellow-400 text-4xl mb-4"></i>
                         <h3 class="text-xl font-bold mb-2">Instant Delivery</h3>
                         <p class="text-gray-300 body-text">Accounts are sent immediately after payment, with full access
                             instructions included.</p>
@@ -257,7 +236,7 @@
                 </div>
                 <div class="grid gap-6 lg:grid-cols-4">
                     <article
-                        class="group rounded-[2rem] border border-gray-800 bg-slate-950/95 p-6 transition hover:border-gold hover:-translate-y-1">
+                        class="group rounded-[2rem] border border-gray-800 bg-slate-950/95 p-6 transition hover:border-yellow-400 hover:-translate-y-1">
                         <div class="flex items-center justify-between mb-4">
                             <h3 class="text-xl font-semibold text-white">Tier 1 Smurf</h3>
                             <span
@@ -276,12 +255,12 @@
                         <div class="flex items-center justify-between">
                             <span class="text-3xl font-extrabold text-white">$14.99</span>
                             <a href="https://github.com/hades875e"
-                                class="rounded-full bg-gold px-5 py-3 text-sm font-bold text-darker hover:bg-goldHover transition">Buy
+                                class="rounded-full bg-yellow-400 px-5 py-3 text-sm font-bold text-slate-900 hover:bg-yellow-500 transition">Buy
                                 Now</a>
                         </div>
                     </article>
                     <article
-                        class="group rounded-[2rem] border border-gray-800 bg-slate-950/95 p-6 transition hover:border-gold hover:-translate-y-1">
+                        class="group rounded-[2rem] border border-gray-800 bg-slate-950/95 p-6 transition hover:border-yellow-400 hover:-translate-y-1">
                         <div class="flex items-center justify-between mb-4">
                             <h3 class="text-xl font-semibold text-white">Premium Sub</h3>
                             <span class="rounded-full bg-amber-500/10 px-3 py-1 text-amber-300 text-xs font-semibold">12
@@ -300,12 +279,12 @@
                         <div class="flex items-center justify-between">
                             <span class="text-3xl font-extrabold text-white">$39.99</span>
                             <a href="https://github.com/hades875e"
-                                class="rounded-full bg-gold px-5 py-3 text-sm font-bold text-darker hover:bg-goldHover transition">Buy
+                                class="rounded-full bg-yellow-400 px-5 py-3 text-sm font-bold text-slate-900 hover:bg-yellow-500 transition">Buy
                                 Now</a>
                         </div>
                     </article>
                     <article
-                        class="group rounded-[2rem] border border-gray-800 bg-slate-950/95 p-6 transition hover:border-gold hover:-translate-y-1">
+                        class="group rounded-[2rem] border border-gray-800 bg-slate-950/95 p-6 transition hover:border-yellow-400 hover:-translate-y-1">
                         <div class="flex items-center justify-between mb-4">
                             <h3 class="text-xl font-semibold text-white">Elite Bundle</h3>
                             <span
@@ -325,12 +304,12 @@
                         <div class="flex items-center justify-between">
                             <span class="text-3xl font-extrabold text-white">$89.99</span>
                             <a href="https://github.com/hades875e"
-                                class="rounded-full bg-gold px-5 py-3 text-sm font-bold text-darker hover:bg-goldHover transition">Buy
+                                class="rounded-full bg-yellow-400 px-5 py-3 text-sm font-bold text-slate-900 hover:bg-yellow-500 transition">Buy
                                 Now</a>
                         </div>
                     </article>
                     <article
-                        class="group rounded-[2rem] border border-gray-800 bg-slate-950/95 p-6 transition hover:border-gold hover:-translate-y-1">
+                        class="group rounded-[2rem] border border-gray-800 bg-slate-950/95 p-6 transition hover:border-yellow-400 hover:-translate-y-1">
                         <div class="flex items-center justify-between mb-4">
                             <h3 class="text-xl font-semibold text-white">Starter Pack</h3>
                             <span
@@ -349,7 +328,7 @@
                         <div class="flex items-center justify-between">
                             <span class="text-3xl font-extrabold text-white">$9.99</span>
                             <a href="https://github.com/hades875e"
-                                class="rounded-full bg-gold px-5 py-3 text-sm font-bold text-darker hover:bg-goldHover transition">Buy
+                                class="rounded-full bg-yellow-400 px-5 py-3 text-sm font-bold text-slate-900 hover:bg-yellow-500 transition">Buy
                                 Now</a>
                         </div>
                     </article>
@@ -493,21 +472,21 @@
                 </div>
                 <div class="grid gap-6 lg:grid-cols-3">
                     <article
-                        class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-7 hover:border-gold transition">
+                        class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-7 hover:border-yellow-400 transition">
                         <p class="text-amber-300 text-xs uppercase tracking-[0.35em] font-semibold">Security</p>
                         <h3 class="mt-4 text-xl font-semibold text-white">How to choose verified accounts</h3>
                         <p class="mt-3 text-gray-400 body-text">Learn the red flags and the trusted signs that separate
                             safe sellers from risky offers.</p>
                     </article>
                     <article
-                        class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-7 hover:border-gold transition">
+                        class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-7 hover:border-yellow-400 transition">
                         <p class="text-amber-300 text-xs uppercase tracking-[0.35em] font-semibold">Delivery</p>
                         <h3 class="mt-4 text-xl font-semibold text-white">Instant access checklist</h3>
                         <p class="mt-3 text-gray-400 body-text">Get the exact process our team uses to deliver accounts
                             quickly and securely.</p>
                     </article>
                     <article
-                        class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-7 hover:border-gold transition">
+                        class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-7 hover:border-yellow-400 transition">
                         <p class="text-amber-300 text-xs uppercase tracking-[0.35em] font-semibold">Support</p>
                         <h3 class="mt-4 text-xl font-semibold text-white">What to expect after purchase</h3>
                         <p class="mt-3 text-gray-400 body-text">See how our support team keeps your account safe and
@@ -518,7 +497,7 @@
         </section>
     </main>
 
-    <footer class="bg-dark border-t border-gray-800 py-12">
+    <footer class="bg-slate-900 border-t border-gray-800 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="flex flex-col items-center gap-4 sm:flex-row sm:justify-between sm:text-left">
                 <div>
