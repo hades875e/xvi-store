@@ -1,0 +1,89 @@
+[
+    {
+        "id": "voltix-pro-keyboard",
+        "name": "Voltix Pro Mechanical Keyboard",
+        "description": "Hot-swappable linear switches, premium PBT keycaps, and a customizable RGB chassis.",
+        "price": 189.0,
+        "stock": 14,
+        "badge": "Best Seller",
+        "category": "Keyboards",
+        "rating": 4.9,
+        "reviews": 238
+    },
+    {
+        "id": "novaflux-mouse",
+        "name": "NovaFlux RGB Gaming Mouse",
+        "description": "High-precision optical sensor, ultra-lightweight frame, and programmable performance zones.",
+        "price": 99.0,
+        "stock": 22,
+        "badge": "Hot Drop",
+        "category": "Mice",
+        "rating": 4.8,
+        "reviews": 182
+    },
+    {
+        "id": "spectra-27-qhd",
+        "name": "Spectra 27" QHD Gaming Monitor","description": "144Hz IPS display with adaptive sync, HDR boost, and razor-sharp color calibration.",
+        "price": 429.0,
+        "stock": 9,
+        "badge": "Limited",
+        "category": "Monitors",
+        "rating": 4.7,
+        "reviews": 121
+    },
+    {
+        "id": "titan-core-headset",
+        "name": "Titan-Core Streaming Headset",
+        "description": "Studio-grade audio, noise-canceling mic, and adaptive spatial sound for streamers.",
+        "price": 149.0,
+        "stock": 17,
+        "badge": "Top Rated",
+        "category": "Audio",
+        "rating": 4.9,
+        "reviews": 304
+    },
+    {
+        "id": "pulsepad-charger",
+        "name": "PulsePad Wireless Charger",
+        "description": "Fast Qi charging with integrated mood lighting and anodized aluminum finish.",
+        "price": 59.0,
+        "stock": 29,
+        "badge": "New",
+        "category": "Accessories",
+        "rating": 4.6,
+        "reviews": 98
+    },
+    {
+        "id": "blaze-fusion-case",
+        "name": "Blaze Fusion PC Case",
+        "description": "Modular airflow architecture with panoramic tempered glass and tool-free assembly.",
+        "price": 199.0,
+        "stock": 11,
+        "badge": "Pro Edition",
+        "category": "Cases",
+        "rating": 4.8,
+        "reviews": 76
+    },
+    {
+        "id": "apex-ergonomic-chair",
+        "name": "Apex Gaming Chair",
+        "description": "Carbon fiber accents, lumbar support, and premium vegan leather for marathon sessions.",
+        "price": 249.0,
+        "stock": 6,
+        "badge": "Premium",
+        "category": "Chairs",
+        "rating": 4.7,
+        "reviews": 54
+    },
+    {
+        "id": "shadowsync-hub",
+        "name": "ShadowSync USB-C Hub",
+        "description": "Thunderbolt performance with seven ports, fast charging, and spill-resistant finish.",
+        "price": 89.0,
+        "stock": 24,
+        "badge": "Essential",
+        "category": "Accessories",
+        "rating": 4.5,
+        "reviews": 69
+    }
+]

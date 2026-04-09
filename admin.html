@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Admin Panel | Voltix Gear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-slate-950 text-white min-h-screen">
+    <header class="bg-slate-900 border-b border-slate-800 py-4">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <a href="index.html" class="text-sky-300 font-bold text-2xl tracking-[0.32em]">VOLTIX</a>
+            <div class="flex flex-wrap items-center gap-4 text-sm text-slate-300">
+                <a href="index.html" class="hover:text-sky-300 transition">Shop</a>
+                <a href="about.html" class="hover:text-sky-300 transition">About</a>
+                <a href="contact.html" class="hover:text-sky-300 transition">Contact</a>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-6xl mx-auto px-4 py-16">
+        <div id="adminContent">
+            <div class="grid gap-8 lg:grid-cols-[1.8fr_1fr]">
+                <section>
+                    <div class="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                        <div>
+                            <p class="section-title text-sm font-semibold tracking-[0.35em]">Admin dashboard</p>
+                            <h1 class="text-4xl font-extrabold text-white">Manage product inventory</h1>
+                        </div>
+                        <a href="cart.html"
+                            class="rounded-full border border-slate-700 bg-slate-900 px-5 py-3 text-sm text-slate-300 hover:border-sky-400 hover:text-white transition">View
+                            cart</a>
+                    </div>
+                    <div id="adminProductList" class="space-y-4"></div>
+                </section>
+                <aside class="rounded-[2rem] glass-card border border-slate-800 p-8 shadow-soft">
+                    <h2 class="text-2xl font-semibold text-white mb-4">Add / edit product</h2>
+                    <form id="productForm" class="space-y-4">
+                        <input type="hidden" name="productId" />
+                        <div>
+                            <label class="text-sm text-slate-400">Product name</label>
+                            <input name="name" required
+                                class="w-full rounded-3xl bg-slate-950 border border-slate-700 px-4 py-3 text-white focus:border-sky-400 focus:outline-none" />
+                        </div>
+                        <div>
+                            <label class="text-sm text-slate-400">Description</label>
+                            <textarea name="description" required rows="3"
+                                class="w-full rounded-3xl bg-slate-950 border border-slate-700 px-4 py-3 text-white focus:border-sky-400 focus:outline-none"></textarea>
+                        </div>
+                        <div class="grid gap-4 md:grid-cols-2">
+                            <input name="price" type="number" step="0.01" min="0" required placeholder="Price"
+                                class="rounded-3xl bg-slate-950 border border-slate-700 px-4 py-3 text-white focus:border-sky-400 focus:outline-none" />
+                            <input name="stock" type="number" min="0" required placeholder="Stock"
+                                class="rounded-3xl bg-slate-950 border border-slate-700 px-4 py-3 text-white focus:border-sky-400 focus:outline-none" />
+                        </div>
+                        <div class="grid gap-4 md:grid-cols-2">
+                            <input name="category" required placeholder="Category"
+                                class="rounded-3xl bg-slate-950 border border-slate-700 px-4 py-3 text-white focus:border-sky-400 focus:outline-none" />
+                            <input name="badge" placeholder="Badge (e.g. Best Seller)"
+                                class="rounded-3xl bg-slate-950 border border-slate-700 px-4 py-3 text-white focus:border-sky-400 focus:outline-none" />
+                        </div>
+                        <button type="submit"
+                            class="w-full rounded-full btn-primary px-6 py-4 text-white font-bold hover:opacity-95 transition">Save
+                            product</button>
+                    </form>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <script src="js/store.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

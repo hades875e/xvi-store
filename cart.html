@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Cart | Voltix Gear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-slate-950 text-white min-h-screen">
+    <header class="bg-slate-900 border-b border-slate-800 py-4">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <a href="index.html" class="text-sky-300 font-bold text-2xl tracking-[0.32em]">VOLTIX</a>
+            <div class="flex flex-wrap items-center gap-4 text-sm text-slate-300">
+                <a href="index.html" class="hover:text-sky-300 transition">Shop</a>
+                <a href="about.html" class="hover:text-sky-300 transition">About</a>
+                <a href="contact.html" class="hover:text-sky-300 transition">Contact</a>
+                <a href="policies.html" class="hover:text-sky-300 transition">Policies</a>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-6xl mx-auto px-4 py-16">
+        <div class="flex flex-col gap-8 lg:flex-row lg:items-start">
+            <section class="flex-1">
+                <div class="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                    <div>
+                        <p class="section-title text-sm font-semibold tracking-[0.35em]">Your cart</p>
+                        <h1 class="mt-3 text-4xl font-extrabold">Review your selected gear</h1>
+                    </div>
+                    <div class="rounded-full bg-slate-900 border border-slate-800 px-4 py-3 text-sm text-slate-300">
+                        <span class="font-semibold text-white">Saved items:</span> <span id="cartCount">0</span>
+                    </div>
+                </div>
+                <div id="emptyCartMessage"
+                    class="rounded-[2rem] border border-slate-800 bg-slate-900 p-10 text-center text-slate-400 hidden">
+                    Your cart is empty. Browse the store to add premium gaming hardware.
+                </div>
+                <div id="cartContent" class="space-y-4"></div>
+            </section>
+            <aside class="w-full lg:w-96 rounded-[2rem] glass-card border border-slate-800 p-8 shadow-soft">
+                <h2 class="text-2xl font-semibold text-white mb-4">Order summary</h2>
+                <div class="flex items-center justify-between text-slate-300 mb-6">
+                    <span>Estimated total</span>
+                    <strong id="cartTotal" class="text-white">$0.00</strong>
+                </div>
+                <button onclick="proceedToTransaction()"
+                    class="w-full rounded-full btn-primary px-6 py-4 text-white font-bold hover:opacity-95 transition">Proceed
+                    to checkout</button>
+                <a href="index.html" class="mt-4 inline-flex text-slate-300 hover:text-sky-300 transition">Continue
+                    shopping</a>
+            </aside>
+        </div>
+    </main>
+    <script src="js/store.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

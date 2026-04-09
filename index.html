@@ -4,176 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XVI Store | Secure, Fast, Reliable Accounts</title>
+    <title>Voltix Gear | Premium Gaming Hardware</title>
     <meta name="description"
-        content="XVI Store delivers secure, instantly delivered accounts with premium support and a money-back guarantee.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="XVI Store">
-    <meta name="language" content="English">
-    <link rel="canonical" href="https://xvi-store.com/">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://xvi-store.com/">
-    <meta property="og:title" content="XVI Store | Secure, Fast, Reliable Accounts">
-    <meta property="og:description"
-        content="XVI Store delivers secure, instantly delivered accounts with premium support and a money-back guarantee.">
-    <meta property="og:image"
-        content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://xvi-store.com/">
-    <meta property="twitter:title" content="XVI Store | Secure, Fast, Reliable Accounts">
-    <meta property="twitter:description"
-        content="XVI Store delivers secure, instantly delivered accounts with premium support and a money-back guarantee.">
-    <meta property="twitter:image"
-        content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:wght@300;400&display=swap"
-        rel="stylesheet">
+        content="Voltix Gear delivers premium gaming gear with fast delivery, secure checkout, and support.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .body-text {
-            font-family: 'Merriweather', serif;
-        }
-
-        .glass {
-            background: rgba(15, 23, 42, 0.72);
-            backdrop-filter: blur(18px);
-        }
-
-        .pulse-fast {
-            animation: pulse-fast 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-
-        @keyframes pulse-fast {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.5;
-            }
-        }
-
-        .backdrop-blur-modal {
-            background: rgba(0, 0, 0, 0.65);
-        }
-
-        .sticky-buy {
-            position: fixed;
-            bottom: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 50;
-            box-shadow: 0 20px 60px rgba(255, 215, 0, 0.18);
-        }
-    </style>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Store",
-            "name": "XVI Store",
-            "description": "Secure, fast, reliable accounts delivered instantly with verified payments and a money-back guarantee.",
-            "url": "https://xvi-store.com/",
-            "sameAs": ["https://xvi-store.com/"],
-            "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59"
-        }
-    </script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-slate-950 text-white antialiased">
-    <div id="exitIntentModal"
-        class="fixed inset-0 hidden items-center justify-center backdrop-blur-modal px-4 py-6 z-60">
-        <div class="bg-slate-900 border border-gray-800 rounded-3xl max-w-lg w-full p-8 text-center shadow-glow">
-            <div class="mb-6">
-                <span
-                    class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-yellow-400 text-slate-900 text-2xl">??</span>
-            </div>
-            <h2 class="text-3xl font-extrabold mb-4">Wait! Get 15% off your first account.</h2>
-            <p class="text-gray-300 body-text mb-6">Leave this page and you could miss the fastest account access,
-                verified security, and real-time support.</p>
-            <div class="rounded-xl bg-slate-950/80 border border-gray-700 p-4 mb-6">
-                <p class="text-sm uppercase tracking-[0.25em] text-amber-300 font-semibold">DISCOUNT CODE</p>
-                <p class="text-2xl font-bold text-white mt-2">XVI15</p>
-            </div>
-            <button onclick="closeExitModal()"
-                class="w-full inline-flex items-center justify-center rounded-full bg-yellow-400 text-slate-900 font-bold px-6 py-3 hover:bg-yellow-500 transition">Use
-                Code Now</button>
-            <button onclick="dismissExitModal()" class="mt-4 text-sm text-gray-400 hover:text-white">No thanks, continue
-                anyway</button>
-        </div>
-    </div>
-
-    <header class="sticky top-0 z-40 bg-slate-900 border-b border-gray-800">
+    <header class="sticky top-0 z-40 bg-slate-900 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <a href="#top" class="text-yellow-400 font-extrabold text-2xl tracking-wider">XVI <span
-                        class="text-white">STORE</span></a>
+                <a href="index.html" class="text-sky-300 font-extrabold text-2xl tracking-wider">VOLTIX <span
+                        class="text-white">GEAR</span></a>
                 <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
                     <a href="#products" class="hover:text-yellow-400 transition">Products</a>
                     <a href="#trust" class="hover:text-yellow-400 transition">Trust</a>
-                    <a href="#about" class="hover:text-yellow-400 transition">About</a>
-                    <a href="#faq" class="hover:text-yellow-400 transition">FAQ</a>
+                    <a href="about.html" class="hover:text-yellow-400 transition">About</a>
+                    <a href="contact.html" class="hover:text-yellow-400 transition">Contact</a>
+                    <a href="policies.html" class="hover:text-yellow-400 transition">Policies</a>
                 </nav>
-                <a href="#products"
-                    class="hidden md:inline-flex items-center gap-2 bg-yellow-400 text-slate-900 font-bold rounded-full px-5 py-3 hover:bg-yellow-500 transition">Shop
-                    Now <i class="fas fa-arrow-right"></i></a>
-                <button id="mobileMenuButton" class="md:hidden text-gray-300 focus:outline-none"><i
-                        class="fas fa-bars text-xl"></i></button>
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="cart.html"
+                        class="relative inline-flex items-center gap-2 rounded-full bg-slate-800 px-4 py-2 text-sm font-semibold text-gray-200 hover:bg-slate-700 transition">
+                        <i class="fas fa-shopping-cart"></i>
+                        Cart
+                        <span id="cartCount"
+                            class="inline-flex h-6 min-w-[1.5rem] items-center justify-center rounded-full bg-yellow-400 text-slate-950 text-xs font-bold">0</span>
+                    </a>
+                    <a href="admin.html"
+                        class="rounded-full border border-slate-700 px-4 py-2 text-sm text-gray-300 hover:border-yellow-400 hover:text-white transition">Admin</a>
+                    <span id="userStatus" class="text-sm text-gray-300"></span>
+                </div>
+                <a href="cart.html"
+                    class="md:hidden inline-flex items-center gap-2 rounded-full bg-yellow-400 px-4 py-2 text-slate-950 text-sm font-bold hover:bg-yellow-500 transition">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCountMobile">0</span>
+                </a>
             </div>
         </div>
     </header>
-
-    <main id="top">
+    <main>
         <section class="relative overflow-hidden bg-slate-950">
-            <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-transparent to-[#111827] opacity-80">
+            <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-transparent to-[#0b1120] opacity-80">
             </div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
                 <div class="grid gap-12 lg:grid-cols-2 items-center">
                     <div class="space-y-8">
                         <div
-                            class="inline-flex items-center gap-3 rounded-full bg-slate-900/70 px-4 py-2 text-sm text-amber-300 font-semibold tracking-wide">
-                            <i class="fas fa-bolt"></i>
-                            Instant accounts with verified delivery
+                            class="inline-flex items-center gap-3 rounded-full bg-slate-900/80 px-4 py-2 text-sm text-amber-300 font-semibold tracking-wide">
+                            <i class="fas fa-shield-alt"></i>
+                            Secure accounts with instant delivery
                         </div>
                         <div class="space-y-6">
                             <h1 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
-                                Secure, Fast, Reliable Accounts � <span class="text-yellow-400">Welcome to XVI
-                                    Store</span>
+                                Premium performance gear — <span class="text-yellow-400">Welcome to Voltix
+                                    Gear</span>
                             </h1>
-                            <p class="text-lg md:text-xl text-gray-300 max-w-2xl body-text">Experience verified account
-                                delivery with 24/7 support, instant checkout, and a money-back guarantee. Perfect for
-                                serious users who want trusted access now.</p>
+                            <p class="text-lg md:text-xl text-gray-300 max-w-2xl body-text">Shop verified accounts with
+                                a smooth checkout flow, persistent cart history, and a money-back guarantee. Built for
+                                performance and trust.</p>
                         </div>
                         <div class="flex flex-col sm:flex-row gap-4 sm:items-center">
                             <a href="#products"
-                                class="inline-flex items-center justify-center rounded-full bg-yellow-400 px-8 py-4 text-sm font-bold text-slate-900 transition hover:bg-yellow-500">Shop
+                                class="inline-flex items-center justify-center rounded-full bg-yellow-400 px-8 py-4 text-sm font-bold text-slate-950 transition hover:bg-yellow-500">Shop
                                 Now</a>
-                            <a href="#trust"
-                                class="inline-flex items-center justify-center rounded-full border border-gray-700 px-8 py-4 text-sm font-semibold text-white hover:border-yellow-400 transition">Why
-                                XVI</a>
+                            <a href="cart.html"
+                                class="inline-flex items-center justify-center rounded-full border border-slate-700 px-8 py-4 text-sm font-semibold text-white hover:border-yellow-400 transition">View
+                                Cart</a>
                         </div>
                         <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
-                            <div class="rounded-3xl bg-slate-950/80 border border-gray-800 p-5 text-center">
+                            <div class="rounded-3xl bg-slate-950/90 border border-slate-800 p-5 text-center">
                                 <p class="text-3xl font-bold text-white">4.9/5</p>
                                 <p class="text-sm text-gray-400">Customer rating</p>
                             </div>
-                            <div class="rounded-3xl bg-slate-950/80 border border-gray-800 p-5 text-center">
+                            <div class="rounded-3xl bg-slate-950/90 border border-slate-800 p-5 text-center">
                                 <p class="text-3xl font-bold text-white">24/7</p>
                                 <p class="text-sm text-gray-400">Support</p>
                             </div>
-                            <div class="rounded-3xl bg-slate-950/80 border border-gray-800 p-5 text-center">
+                            <div class="rounded-3xl bg-slate-950/90 border border-slate-800 p-5 text-center">
                                 <p class="text-3xl font-bold text-white">Instant</p>
                                 <p class="text-sm text-gray-400">Delivery</p>
                             </div>
-                            <div class="rounded-3xl bg-slate-950/80 border border-gray-800 p-5 text-center">
+                            <div class="rounded-3xl bg-slate-950/90 border border-slate-800 p-5 text-center">
                                 <p class="text-3xl font-bold text-white">30d</p>
                                 <p class="text-sm text-gray-400">Guarantee</p>
                             </div>
@@ -182,14 +97,14 @@
                     <div class="relative">
                         <div class="absolute -right-12 top-12 w-56 h-56 rounded-full bg-yellow-400/15 blur-3xl"></div>
                         <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-                            alt="Cyber abstract" class="w-full rounded-[2rem] border border-gray-800 shadow-glow">
+                            alt="Cyber abstract" class="w-full rounded-[2rem] border border-slate-800 shadow-soft">
                         <div
-                            class="absolute bottom-0 left-0 right-0 mx-auto w-11/12 translate-y-1/2 rounded-3xl bg-slate-950/95 border border-gray-800 p-6 shadow-glow backdrop-blur lg:w-4/5">
+                            class="absolute bottom-0 left-1/2 right-1/2 translate-x-[-50%] translate-y-1/2 w-11/12 rounded-3xl bg-slate-950/95 border border-slate-800 p-6 shadow-soft lg:w-4/5">
                             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                                 <div>
                                     <p class="text-sm uppercase tracking-[0.4em] text-amber-300 font-semibold">Flash
                                         Sale</p>
-                                    <p class="mt-2 text-lg font-bold text-white">Limited run offers end in:</p>
+                                    <p class="mt-2 text-lg font-bold text-white">Limited offers end in:</p>
                                 </div>
                                 <div
                                     class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm text-white">
@@ -202,176 +117,75 @@
                 </div>
             </div>
         </section>
-
-        <section id="trust" class="py-16 bg-slate-900 border-t border-gray-800">
+        <section id="trust" class="py-16 bg-slate-900 border-t border-slate-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid gap-6 md:grid-cols-3">
-                    <div class="glass rounded-3xl border border-gray-800 p-8 text-center shadow-glow">
+                    <div class="rounded-3xl border border-slate-800 bg-slate-950/80 p-8 text-center shadow-soft">
                         <i class="fas fa-shield-alt text-yellow-400 text-4xl mb-4"></i>
                         <h3 class="text-xl font-bold mb-2">SSL Secure</h3>
-                        <p class="text-gray-300 body-text">All purchases are protected by bank-level encryption and
-                            verified payment gateways.</p>
+                        <p class="text-gray-300 body-text">All purchases use verified payment gateways and bank-level
+                            protection.</p>
                     </div>
-                    <div class="glass rounded-3xl border border-gray-800 p-8 text-center shadow-glow">
+                    <div class="rounded-3xl border border-slate-800 bg-slate-950/80 p-8 text-center shadow-soft">
                         <i class="fas fa-bolt text-yellow-400 text-4xl mb-4"></i>
                         <h3 class="text-xl font-bold mb-2">Instant Delivery</h3>
-                        <p class="text-gray-300 body-text">Accounts are sent immediately after payment, with full access
-                            instructions included.</p>
+                        <p class="text-gray-300 body-text">Accounts are delivered immediately to your email after
+                            checkout.</p>
                     </div>
-                    <div class="glass rounded-3xl border border-gray-800 p-8 text-center shadow-glow">
-                        <i class="fas fa-headset text-gold text-4xl mb-4"></i>
+                    <div class="rounded-3xl border border-slate-800 bg-slate-950/80 p-8 text-center shadow-soft">
+                        <i class="fas fa-headset text-yellow-400 text-4xl mb-4"></i>
                         <h3 class="text-xl font-bold mb-2">24/7 Support</h3>
-                        <p class="text-gray-300 body-text">Real support staff are available round-the-clock for setup,
-                            delivery, and security help.</p>
+                        <p class="text-gray-300 body-text">Real-time support is available whenever you need assistance.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-
         <section id="products" class="py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between mb-10">
                     <div>
-                        <p class="text-sm uppercase tracking-[0.35em] text-amber-300 font-semibold">Trending Accounts
+                        <p class="text-sm uppercase tracking-[0.35em] text-amber-300 font-semibold">Featured products
                         </p>
-                        <h2 class="mt-3 text-4xl font-extrabold text-white">High-converting account packages</h2>
+                        <h2 class="mt-3 text-4xl font-extrabold text-white">Elite gaming hardware & accessories</h2>
                     </div>
-                    <div class="rounded-full bg-slate-900 border border-gray-800 px-4 py-3 text-sm text-gray-300">
+                    <div class="rounded-full bg-slate-900 border border-slate-800 px-4 py-3 text-sm text-gray-300">
                         <span class="font-semibold text-white">Hot deal:</span> 15% off first purchase with code <span
-                            class="text-amber-300">XVI15</span>
+                            class="text-amber-300">VOLTIX15</span>
                     </div>
                 </div>
-                <div class="grid gap-6 lg:grid-cols-4">
-                    <article
-                        class="group rounded-[2rem] border border-gray-800 bg-slate-950/95 p-6 transition hover:border-yellow-400 hover:-translate-y-1">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-xl font-semibold text-white">Tier 1 Smurf</h3>
-                            <span
-                                class="rounded-full bg-amber-500/10 px-3 py-1 text-amber-300 text-xs font-semibold">Ranked
-                                Ready</span>
-                        </div>
-                        <p class="text-gray-400 body-text mb-6">Level 30+, clean match history, all skins unlocked.</p>
-                        <div class="space-y-4 mb-6">
-                            <div class="flex items-center gap-2 text-sm text-gray-300"><i
-                                    class="fas fa-check text-amber-300"></i>Verified security</div>
-                            <div class="flex items-center gap-2 text-sm text-gray-300"><i
-                                    class="fas fa-clock text-red-500"></i>Only 3 left</div>
-                            <div class="flex items-center gap-2 text-sm text-gray-300"><i
-                                    class="fas fa-heart text-green-400"></i>Customer favorite</div>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-3xl font-extrabold text-white">$14.99</span>
-                            <a href="transaction.html"
-                                class="rounded-full bg-yellow-400 px-5 py-3 text-sm font-bold text-slate-900 hover:bg-yellow-500 transition">Buy
-                                Now</a>
-                        </div>
-                    </article>
-                    <article
-                        class="group rounded-[2rem] border border-gray-800 bg-slate-950/95 p-6 transition hover:border-yellow-400 hover:-translate-y-1">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-xl font-semibold text-white">Premium Sub</h3>
-                            <span class="rounded-full bg-amber-500/10 px-3 py-1 text-amber-300 text-xs font-semibold">12
-                                Months</span>
-                        </div>
-                        <p class="text-gray-400 body-text mb-6">Premium access with private profile and priority
-                            support.</p>
-                        <div class="space-y-4 mb-6">
-                            <div class="flex items-center gap-2 text-sm text-gray-300"><i
-                                    class="fas fa-check text-amber-300"></i>Fast activation</div>
-                            <div class="flex items-center gap-2 text-sm text-gray-300"><i
-                                    class="fas fa-shield-alt text-blue-400"></i>Verified payment</div>
-                            <div class="flex items-center gap-2 text-sm text-gray-300"><i
-                                    class="fas fa-star text-green-400"></i>Highly rated</div>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-3xl font-extrabold text-white">$39.99</span>
-                            <a href="transaction.html"
-                                class="rounded-full bg-yellow-400 px-5 py-3 text-sm font-bold text-slate-900 hover:bg-yellow-500 transition">Buy
-                                Now</a>
-                        </div>
-                    </article>
-                    <article
-                        class="group rounded-[2rem] border border-gray-800 bg-slate-950/95 p-6 transition hover:border-yellow-400 hover:-translate-y-1">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-xl font-semibold text-white">Elite Bundle</h3>
-                            <span
-                                class="rounded-full bg-amber-500/10 px-3 py-1 text-amber-300 text-xs font-semibold">Best
-                                Value</span>
-                        </div>
-                        <p class="text-gray-400 body-text mb-6">Three premium accounts bundled with priority delivery.
-                        </p>
-                        <div class="space-y-4 mb-6">
-                            <div class="flex items-center gap-2 text-sm text-gray-300"><i
-                                    class="fas fa-check text-amber-300"></i>Instant checkout</div>
-                            <div class="flex items-center gap-2 text-sm text-gray-300"><i
-                                    class="fas fa-bolt text-gold"></i>Express setup</div>
-                            <div class="flex items-center gap-2 text-sm text-gray-300"><i
-                                    class="fas fa-shield-alt text-blue-400"></i>Secure handoff</div>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-3xl font-extrabold text-white">$89.99</span>
-                            <a href="transaction.html"
-                                class="rounded-full bg-yellow-400 px-5 py-3 text-sm font-bold text-slate-900 hover:bg-yellow-500 transition">Buy
-                                Now</a>
-                        </div>
-                    </article>
-                    <article
-                        class="group rounded-[2rem] border border-gray-800 bg-slate-950/95 p-6 transition hover:border-yellow-400 hover:-translate-y-1">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-xl font-semibold text-white">Starter Pack</h3>
-                            <span
-                                class="rounded-full bg-amber-500/10 px-3 py-1 text-amber-300 text-xs font-semibold">New
-                                Users</span>
-                        </div>
-                        <p class="text-gray-400 body-text mb-6">Perfect account entry package with full guidance.</p>
-                        <div class="space-y-4 mb-6">
-                            <div class="flex items-center gap-2 text-sm text-gray-300"><i
-                                    class="fas fa-check text-amber-300"></i>Secure access</div>
-                            <div class="flex items-center gap-2 text-sm text-gray-300"><i
-                                    class="fas fa-user-shield text-blue-400"></i>Safe setup</div>
-                            <div class="flex items-center gap-2 text-sm text-gray-300"><i
-                                    class="fas fa-heart text-green-400"></i>Trusted seller</div>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-3xl font-extrabold text-white">$9.99</span>
-                            <a href="transaction.html"
-                                class="rounded-full bg-yellow-400 px-5 py-3 text-sm font-bold text-slate-900 hover:bg-yellow-500 transition">Buy
-                                Now</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
+                <div id="productGrid" class="grid gap-6 lg:grid-cols-4"></div>
             </div>
         </section>
-
-        <section id="about" class="py-16 bg-dark border-t border-gray-800">
+        <section id="about" class="py-16 bg-slate-900 border-t border-slate-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid gap-10 lg:grid-cols-2 items-center">
                     <div>
-                        <p class="text-sm uppercase tracking-[0.35em] text-amber-300 font-semibold">About XVI Store</p>
-                        <h2 class="mt-3 text-4xl font-extrabold text-white">Built for trusted account access and fast
-                            delivery.</h2>
-                        <p class="mt-6 text-gray-300 body-text leading-8">XVI Store was created to remove the wait and
-                            uncertainty from account buying. Every package is verified, every payment is secure, and
-                            every delivery is handled within minutes so you can get back to winning.</p>
+                        <p class="text-sm uppercase tracking-[0.35em] text-amber-300 font-semibold">About Voltix Gear
+                        </p>
+                        <h2 class="mt-3 text-4xl font-extrabold text-white">Built for trusted gear delivery and premium
+                            support.</h2>
+                        <p class="mt-6 text-gray-300 body-text leading-8">Voltix Gear removes the wait and uncertainty
+                            from buying gaming hardware. Every product is curated, payment is secure, and delivery is
+                            handled quickly.</p>
                         <div class="mt-8 grid gap-4 sm:grid-cols-2">
-                            <div class="rounded-3xl bg-slate-950/90 border border-gray-800 p-6">
+                            <div class="rounded-3xl bg-slate-950/90 border border-slate-800 p-6">
                                 <p class="text-3xl font-bold text-white">99.9%</p>
-                                <p class="text-gray-400 text-sm">Delivery accuracy</p>
+                                <p class="text-gray-400 text-sm">Product reliability</p>
                             </div>
-                            <div class="rounded-3xl bg-slate-950/90 border border-gray-800 p-6">
-                                <p class="text-3xl font-bold text-white">1 min</p>
-                                <p class="text-gray-400 text-sm">Average delivery time</p>
+                            <div class="rounded-3xl bg-slate-950/90 border border-slate-800 p-6">
+                                <p class="text-3xl font-bold text-white"><span class="text-yellow-400">Fast</span></p>
+                                <p class="text-gray-400 text-sm">Shipping and support</p>
                             </div>
                         </div>
                     </div>
                     <div class="space-y-5">
-                        <div class="rounded-3xl bg-slate-950/95 border border-gray-800 p-6 shadow-glow">
+                        <div class="rounded-3xl bg-slate-950/95 border border-slate-800 p-6 shadow-soft">
                             <h3 class="text-xl font-bold text-white mb-3">Our Promise</h3>
                             <p class="text-gray-300 body-text">We never resell suspicious accounts. If access fails,
-                                your purchase is replaced or refunded instantly.</p>
+                                your purchase is replaced or refunded immediately.</p>
                         </div>
-                        <div class="rounded-3xl bg-slate-950/95 border border-gray-800 p-6 shadow-glow">
+                        <div class="rounded-3xl bg-slate-950/95 border border-slate-800 p-6 shadow-soft">
                             <h3 class="text-xl font-bold text-white mb-3">Trusted payments</h3>
                             <p class="text-gray-300 body-text">Stripe, PayPal, and crypto options are supported with
                                 verified gateways and fraud protection.</p>
@@ -380,7 +194,6 @@
                 </div>
             </div>
         </section>
-
         <section id="testimonials" class="py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
@@ -388,123 +201,63 @@
                     <h2 class="mt-3 text-4xl font-extrabold text-white">What customers say</h2>
                 </div>
                 <div class="grid gap-6 md:grid-cols-3">
-                    <article class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-8 shadow-glow">
+                    <article class="rounded-[2rem] bg-slate-950/95 border border-slate-800 p-8 shadow-soft">
                         <div class="flex items-center gap-4 mb-5">
                             <span
-                                class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold text-darker">JS</span>
+                                class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 text-slate-950">JS</span>
                             <div>
                                 <p class="font-semibold text-white">John Smith</p>
                                 <p class="text-sm text-gray-400">Esports Manager</p>
                             </div>
                         </div>
-                        <p class="text-gray-300 body-text">�XVI Store delivered my account instantly and the support
-                            team helped me through setup in minutes. No risky transactions, just fast access.�</p>
+                        <p class="text-gray-300 body-text">“XVI Store delivered my account instantly and the support
+                            team helped me through setup in minutes. No risky transactions, just fast access.”</p>
                     </article>
-                    <article class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-8 shadow-glow">
+                    <article class="rounded-[2rem] bg-slate-950/95 border border-slate-800 p-8 shadow-soft">
                         <div class="flex items-center gap-4 mb-5">
                             <span
-                                class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold text-darker">SJ</span>
+                                class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 text-slate-950">SJ</span>
                             <div>
                                 <p class="font-semibold text-white">Sarah Johnson</p>
                                 <p class="text-sm text-gray-400">Streamer</p>
                             </div>
                         </div>
-                        <p class="text-gray-300 body-text">�The guarantee gave me confidence, and the delivery was
-                            exactly as promised. I�m using their accounts every week now.�</p>
+                        <p class="text-gray-300 body-text">“The guarantee gave me confidence, and the delivery was
+                            exactly as promised. I’m using their accounts every week now.”</p>
                     </article>
-                    <article class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-8 shadow-glow">
+                    <article class="rounded-[2rem] bg-slate-950/95 border border-slate-800 p-8 shadow-soft">
                         <div class="flex items-center gap-4 mb-5">
                             <span
-                                class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold text-darker">EM</span>
+                                class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 text-slate-950">EM</span>
                             <div>
                                 <p class="font-semibold text-white">Emily Martinez</p>
                                 <p class="text-sm text-gray-400">Content Creator</p>
                             </div>
                         </div>
-                        <p class="text-gray-300 body-text">�Excellent experience. The account worked perfectly, and I
-                            love the fast response from support when I needed help.�</p>
+                        <p class="text-gray-300 body-text">“Excellent experience. The account worked perfectly, and I
+                            love the fast response from support when I needed help.”</p>
                     </article>
                 </div>
             </div>
         </section>
-
-        <section id="capture" class="py-16 bg-darker border-t border-gray-800">
+        <section id="capture" class="py-16 bg-slate-900 border-t border-slate-800">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <div class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-10 shadow-glow">
+                <div class="rounded-[2rem] bg-slate-950/95 border border-slate-800 p-10 shadow-soft">
                     <p class="text-sm uppercase tracking-[0.35em] text-amber-300 font-semibold">Never miss a deal</p>
                     <h2 class="mt-4 text-4xl font-extrabold text-white">Join the VIP list</h2>
                     <p class="mt-4 text-gray-300 body-text mx-auto max-w-2xl">Get exclusive discounts, flash offers, and
                         instant delivery alerts directly to your inbox.</p>
                     <form class="mt-8 grid gap-4 sm:grid-cols-[1fr_auto]">
                         <input type="email" placeholder="Enter your email"
-                            class="rounded-full border border-gray-700 bg-slate-900 px-5 py-4 text-white outline-none focus:border-gold focus:ring-2 focus:ring-amber-300" />
+                            class="rounded-full border border-slate-700 bg-slate-900 px-5 py-4 text-white outline-none focus:border-yellow-400 focus:ring-2 focus:ring-amber-300" />
                         <button
-                            class="rounded-full bg-gold px-6 py-4 font-bold text-darker hover:bg-goldHover transition">Subscribe</button>
+                            class="rounded-full bg-yellow-400 px-6 py-4 font-bold text-slate-950 hover:bg-yellow-500 transition">Subscribe</button>
                     </form>
                 </div>
             </div>
         </section>
-
-        <section id="faq" class="py-16">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <p class="text-sm uppercase tracking-[0.35em] text-amber-300 font-semibold">FAQs</p>
-                    <h2 class="mt-3 text-4xl font-extrabold text-white">Questions answered</h2>
-                </div>
-                <div class="grid gap-6 md:grid-cols-3">
-                    <div class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-7">
-                        <h3 class="text-lg font-semibold text-white mb-3">How fast is delivery?</h3>
-                        <p class="text-gray-400 body-text">Most orders are delivered instantly. In rare cases, delivery
-                            can take up to 15 minutes while we verify access.</p>
-                    </div>
-                    <div class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-7">
-                        <h3 class="text-lg font-semibold text-white mb-3">Is payment secure?</h3>
-                        <p class="text-gray-400 body-text">Yes � we support Stripe, PayPal, and crypto with verified
-                            gateways and encryption.</p>
-                    </div>
-                    <div class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-7">
-                        <h3 class="text-lg font-semibold text-white mb-3">What if the account fails?</h3>
-                        <p class="text-gray-400 body-text">If access fails within 30 days, we replace it or refund you
-                            immediately with no questions asked.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="blog" class="py-16 bg-dark border-t border-gray-800">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <p class="text-sm uppercase tracking-[0.35em] text-amber-300 font-semibold">From the blog</p>
-                    <h2 class="mt-3 text-4xl font-extrabold text-white">Tips for safer account buying</h2>
-                </div>
-                <div class="grid gap-6 lg:grid-cols-3">
-                    <article
-                        class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-7 hover:border-yellow-400 transition">
-                        <p class="text-amber-300 text-xs uppercase tracking-[0.35em] font-semibold">Security</p>
-                        <h3 class="mt-4 text-xl font-semibold text-white">How to choose verified accounts</h3>
-                        <p class="mt-3 text-gray-400 body-text">Learn the red flags and the trusted signs that separate
-                            safe sellers from risky offers.</p>
-                    </article>
-                    <article
-                        class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-7 hover:border-yellow-400 transition">
-                        <p class="text-amber-300 text-xs uppercase tracking-[0.35em] font-semibold">Delivery</p>
-                        <h3 class="mt-4 text-xl font-semibold text-white">Instant access checklist</h3>
-                        <p class="mt-3 text-gray-400 body-text">Get the exact process our team uses to deliver accounts
-                            quickly and securely.</p>
-                    </article>
-                    <article
-                        class="rounded-[2rem] bg-slate-950/95 border border-gray-800 p-7 hover:border-yellow-400 transition">
-                        <p class="text-amber-300 text-xs uppercase tracking-[0.35em] font-semibold">Support</p>
-                        <h3 class="mt-4 text-xl font-semibold text-white">What to expect after purchase</h3>
-                        <p class="mt-3 text-gray-400 body-text">See how our support team keeps your account safe and
-                            helps with setup instantly.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
     </main>
-
-    <footer class="bg-slate-900 border-t border-gray-800 py-12">
+    <footer class="bg-slate-900 border-t border-slate-800 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="flex flex-col items-center gap-4 sm:flex-row sm:justify-between sm:text-left">
                 <div>
@@ -512,9 +265,9 @@
                     <p class="text-gray-400 text-sm">Secure accounts, trusted delivery, instant support.</p>
                 </div>
                 <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-400">
-                    <a href="#trust" class="hover:text-gold transition">Trust</a>
-                    <a href="#faq" class="hover:text-gold transition">FAQ</a>
-                    <a href="#capture" class="hover:text-gold transition">Subscribe</a>
+                    <a href="#trust" class="hover:text-yellow-400 transition">Trust</a>
+                    <a href="#faq" class="hover:text-yellow-400 transition">FAQ</a>
+                    <a href="#capture" class="hover:text-yellow-400 transition">Subscribe</a>
                 </div>
             </div>
             <div class="mt-10 flex flex-wrap justify-center gap-4 text-gray-500 text-sm">
@@ -526,39 +279,28 @@
             <p class="mt-8 text-gray-600 text-xs">&copy; 2026 XVI Store. All rights reserved.</p>
         </div>
     </footer>
-
-    <div class="sticky-buy hidden md:flex items-center gap-3 rounded-full bg-gold px-5 py-3 text-sm font-bold text-darker shadow-glow"
-        id="stickyBuy">
-        <span>Limited release offer</span>
-        <a href="#products" class="rounded-full bg-darker px-4 py-2 text-white">Shop Now</a>
+    <div id="exitIntentModal" class="fixed inset-0 hidden items-center justify-center dialog-backdrop px-4 py-6 z-50">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-lg w-full p-8 text-center shadow-soft">
+            <div class="mb-6">
+                <span
+                    class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-yellow-400 text-slate-950 text-2xl">🔥</span>
+            </div>
+            <h2 class="text-3xl font-extrabold mb-4">Limited-time offer: 15% off your first gear purchase.</h2>
+            <p class="text-gray-300 body-text mb-6">Don’t miss the fastest account delivery and verified support. Use
+                the code below before you leave.</p>
+            <div class="rounded-xl bg-slate-950/80 border border-slate-800 p-4 mb-6">
+                <p class="text-sm uppercase tracking-[0.25em] text-amber-300 font-semibold">Discount code</p>
+                <p class="text-2xl font-bold text-white mt-2">VOLTIX15</p>
+            </div>
+            <button onclick="closeExitModal()"
+                class="w-full inline-flex items-center justify-center rounded-full bg-yellow-400 text-slate-950 font-bold px-6 py-3 hover:bg-yellow-500 transition">Use
+                Code Now</button>
+            <button onclick="closeExitModal()" class="mt-4 text-sm text-gray-400 hover:text-white">No thanks, continue
+                anyway</button>
+        </div>
     </div>
-
-    <script>
-        let exitModalShown = false;
-        const exitModal = document.getElementById('exitIntentModal');
-        const stickyBuy = document.getElementById('stickyBuy');
-        function closeExitModal() { exitModal.classList.add('hidden'); }
-        function dismissExitModal() { exitModal.classList.add('hidden'); exitModalShown = true; }
-        document.addEventListener('mouseout', function (e) {
-            if (e.clientY < 10 && !exitModalShown) {
-                exitModal.classList.remove('hidden');
-            }
-        });
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 450) { stickyBuy.classList.remove('hidden'); } else { stickyBuy.classList.add('hidden'); }
-        });
-        function startCountdown(duration) {
-            let timer = duration;
-            const countdownEl = document.getElementById('heroCountdown');
-            setInterval(() => {
-                const minutes = String(Math.floor(timer / 60)).padStart(2, '0');
-                const seconds = String(timer % 60).padStart(2, '0');
-                countdownEl.textContent = `${minutes}:${seconds}`;
-                timer = timer > 0 ? timer - 1 : duration;
-            }, 1000);
-        }
-        startCountdown(754);
-    </script>
+    <script src="js/store.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>
