@@ -22,7 +22,7 @@ async function initProducts() {
     if (stored && currentVersion >= PRODUCT_SEED_VERSION) return JSON.parse(stored);
 
     try {
-        const response = await fetch('/data/products.json');
+        const response = await fetch('./data/products.json');
         const products = await response.json();
         localStorage.setItem(STORAGE_KEYS.PRODUCTS, JSON.stringify(products));
         localStorage.setItem(STORAGE_KEYS.PRODUCT_VERSION, String(PRODUCT_SEED_VERSION));

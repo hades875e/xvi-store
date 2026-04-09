@@ -36,40 +36,15 @@ function renderCategoryFilters() {
 function renderProducts(category = 'All') {
     const products = getProducts();
     const grid = document.getElementById('productGrid');
-    const productCount = document.getElementById('productCount');
     if (!grid) return;
 
-    const filtered = category === 'All' ? products : products.filter((product) => product.category === category);
-    if (productCount) {
-        productCount.textContent = `${filtered.length} ${filtered.length === 1 ? 'item' : 'items'}`;
-    }
+    const clothing = products.filter((product) => product.category === 'Clothing');
+    const gameAccounts = products.filter((product) => product.category === 'Game Accounts');
 
-    grid.innerHTML = filtered
-        .map((product) => {
-            const disabled = product.stock === 0 ? 'opacity-50 cursor-not-allowed' : '';
-            const buttonLabel = product.stock === 0 ? 'Sold out' : 'Add to Cart';
-            return `
-        <article class="product-card rounded-[2rem] border border-slate-800 bg-slate-950/95 p-6 glass-card">
-          <div class="flex items-center justify-between mb-4 gap-4">
-            <span class="card-label">${product.category}</span>
-            <span class="rounded-full border border-slate-700 bg-slate-900 px-3 py-1 text-xs font-semibold text-slate-200">${product.badge}</span>
-          </div>
-          <h3 class="text-2xl font-semibold text-white mb-3">${product.name}</h3>
-          <p class="text-gray-400 body-text mb-6">${product.description}</p>
-          <div class="flex flex-wrap items-center gap-2 text-sm text-gray-300 mb-6 product-rating">
-            <span class="inline-flex items-center gap-1">${createRatingStars(product.rating)}</span>
-            <span class="text-slate-500">${product.rating.toFixed(1)} · ${product.reviews} reviews</span>
-          </div>
-          <div class="flex items-center justify-between gap-4">
-            <div>
-              <p class="text-3xl font-extrabold text-white">$${product.price.toFixed(2)}</p>
-              <p class="text-sm text-slate-500 mt-1">Only ${product.stock} left</p>
-            </div>
-            <button data-product-id="${product.id}" class="addToCartButton rounded-full bg-gradient-to-r from-sky-500 to-violet-600 px-5 py-3 text-sm font-semibold text-white transition ${disabled}" ${product.stock === 0 ? 'disabled' : ''}>${buttonLabel}</button>
-          </div>
-        </article>`;
-        })
-        .join('');
+    grid.innerHTML = `
+        ${renderProductSection('Clothing Collection', 'Streetwear, luxury essentials, and styled outfits for the modern wardrobe.', clothing)}
+        ${renderProductSection('Game Accounts & Digital Items', 'Verified game accounts, bundles, and premium digital drops with instant activation.', gameAccounts)}
+    `;
 
     document.querySelectorAll('.addToCartButton').forEach((button) => {
         button.addEventListener('click', () => {
@@ -80,6 +55,52 @@ function renderProducts(category = 'All') {
             showToast(`${product.name} added to cart`);
         });
     });
+}
+
+function renderProductSection(title, subtitle, products) {
+    if (!products.length) {
+        return `<section class="product-section"><div class="section-header"><h2>${title}</h2><p>${subtitle}</p></div><p class="text-slate-400">No products available.</p></section>`;
+    }
+
+    return `
+        <section class="product-section bg-slate-900/80 rounded-[2rem] border border-slate-800 p-8 shadow-soft">
+            <div class="section-header mb-8">
+                <p class="section-label text-sky-400">${title}</p>
+                <h2 class="text-3xl font-extrabold text-white mt-3">${title}</h2>
+                <p class="mt-3 max-w-2xl text-slate-400">${subtitle}</p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2">
+                ${products.map((product) => renderProductCard(product)).join('')}
+            </div>
+        </section>`;
+}
+
+function renderProductCard(product) {
+    const disabled = product.stock === 0 ? 'opacity-50 cursor-not-allowed' : '';
+    const buttonLabel = product.stock === 0 ? 'Sold out' : 'Add to Cart';
+    return `
+        <article class="product-card rounded-[2rem] border border-slate-800 bg-slate-950/95 p-6 glass-card overflow-hidden ${disabled}">
+            <div class="relative mb-4">
+                <img src="${product.image}" alt="${product.name}" class="product-image rounded-3xl w-full h-64 object-cover object-center mb-4">
+                <span class="product-badge absolute top-4 right-4 px-3 py-1 text-xs font-semibold text-slate-950 bg-sky-400/95 rounded-full">${product.badge}</span>
+            </div>
+            <div class="mb-4">
+                <span class="card-label">${product.category}</span>
+                <h3 class="mt-3 text-2xl font-semibold text-white">${product.name}</h3>
+                <p class="text-gray-400 body-text mt-3">${product.description}</p>
+            </div>
+            <div class="flex items-center justify-between gap-4 mb-6">
+                <div>
+                    <p class="text-3xl font-extrabold text-white">$${product.price.toFixed(2)}</p>
+                    <p class="text-sm text-slate-500 mt-1">${product.stock} available</p>
+                </div>
+                <div class="text-sm text-slate-300">
+                    <div class="flex items-center gap-1 mb-1">${createRatingStars(product.rating)}</div>
+                    <span class="text-slate-500">${product.reviews} reviews</span>
+                </div>
+            </div>
+            <button data-product-id="${product.id}" class="addToCartButton w-full rounded-full bg-gradient-to-r from-sky-500 to-violet-600 px-5 py-3 text-sm font-semibold text-white transition ${disabled}" ${product.stock === 0 ? 'disabled' : ''}>${buttonLabel}</button>
+        </article>`;
 }
 
 function createRatingStars(rating) {
