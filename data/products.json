@@ -23,7 +23,8 @@
     },
     {
         "id": "spectra-27-qhd",
-        "name": "Spectra 27" QHD Gaming Monitor","description": "144Hz IPS display with adaptive sync, HDR boost, and razor-sharp color calibration.",
+        "name": "Spectra 27\" QHD Gaming Monitor",
+        "description": "144Hz IPS display with adaptive sync, HDR boost, and razor-sharp color calibration.",
         "price": 429.0,
         "stock": 9,
         "badge": "Limited",
@@ -85,5 +86,93 @@
         "category": "Accessories",
         "rating": 4.5,
         "reviews": 69
+    },
+    {
+        "id": "steam-elite-account",
+        "name": "Steam Elite Gaming Account",
+        "description": "Premium Steam account with 50+ games, level 50 profile, and verified email. Includes CS2, Valorant, and more.",
+        "price": 89.99,
+        "stock": 15,
+        "badge": "Verified",
+        "category": "Gaming Accounts",
+        "rating": 4.8,
+        "reviews": 156
+    },
+    {
+        "id": "epic-games-bundle",
+        "name": "Epic Games Premium Bundle",
+        "description": "Epic Games account with Fortnite skins, Rocket League credits, and exclusive in-game items. Full access guaranteed.",
+        "price": 49.99,
+        "stock": 23,
+        "badge": "Bundle Deal",
+        "category": "Gaming Accounts",
+        "rating": 4.7,
+        "reviews": 89
+    },
+    {
+        "id": "instagram-business-account",
+        "name": "Instagram Business Account (5K+ Followers)",
+        "description": "Established Instagram business account with 5,200 followers, engagement rate 8.5%, fashion niche. Transfer guaranteed.",
+        "price": 299.99,
+        "stock": 8,
+        "badge": "High Engagement",
+        "category": "Social Media Accounts",
+        "rating": 4.6,
+        "reviews": 67
+    },
+    {
+        "id": "twitter-influencer-account",
+        "name": "Twitter Influencer Account (10K+ Followers)",
+        "description": "Verified Twitter account with 12,500 followers, tech/gaming focus, 15% engagement rate. Includes blue checkmark.",
+        "price": 199.99,
+        "stock": 12,
+        "badge": "Verified",
+        "category": "Social Media Accounts",
+        "rating": 4.5,
+        "reviews": 43
+    },
+    {
+        "id": "nike-brand-merchandise",
+        "name": "Nike x Voltix Limited Edition Hoodie",
+        "description": "Exclusive collaboration hoodie featuring Voltix branding, premium cotton blend, and embroidered logos.",
+        "price": 79.99,
+        "stock": 18,
+        "badge": "Limited Edition",
+        "category": "Brand Merchandise",
+        "rating": 4.9,
+        "reviews": 134
+    },
+    {
+        "id": "voltix-logo-tshirt",
+        "name": "Voltix Logo Performance T-Shirt",
+        "description": "Moisture-wicking fabric with Voltix logo print, perfect for gaming sessions or casual wear.",
+        "price": 34.99,
+        "stock": 32,
+        "badge": "Best Seller",
+        "category": "Brand Merchandise",
+        "rating": 4.7,
+        "reviews": 201
+    },
+    {
+        "id": "discord-nitro-account",
+        "name": "Discord Nitro Premium Account",
+        "description": "1-year Discord Nitro subscription with custom emoji, animated avatar, and server boosting. Instant activation.",
+        "price": 49.99,
+        "stock": 27,
+        "badge": "Instant Delivery",
+        "category": "Digital Accounts",
+        "rating": 4.8,
+        "reviews": 312
+    },
+    {
+        "id": "spotify-premium-account",
+        "name": "Spotify Premium Family Account",
+        "description": "6-month Spotify Premium Family plan (up to 6 accounts), ad-free music, offline downloads, and high-quality audio.",
+        "price": 29.99,
+        "stock": 41,
+        "badge": "Family Plan",
+        "category": "Digital Accounts",
+        "rating": 4.6,
+        "reviews": 178
     }
 ]
